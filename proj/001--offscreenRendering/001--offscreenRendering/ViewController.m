@@ -25,17 +25,24 @@
     //
     
     //1.按钮存在背景图片
-//    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-//    btn1.frame = CGRectMake(100, 30, 100, 100);
-//    [btn1 setImage:[UIImage imageNamed:@"btn.png"] forState:UIControlStateNormal];
-//    [self.view addSubview:btn1];
-//
-//    btn1.layer.cornerRadius = 50;
-//    btn1.clipsToBounds = YES;
+    UIButton *btnX = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnX.frame = CGRectMake(250, 30, 100, 100);
+    [btnX setImage:[UIImage imageNamed:@"btn.png"] forState:UIControlStateNormal];
+    [self.view addSubview: btnX];
+
+    btnX.layer.cornerRadius = 50;
+    btnX.clipsToBounds = YES;
     
     
     //
     
+    btnX.layer.borderColor = UIColor.magentaColor.CGColor;
+    btnX.layer.borderWidth = 2;
+    
+    //
+    
+    
+    //
     
     //
     
@@ -102,7 +109,7 @@
     img1.layer.cornerRadius = 50;
     img1.layer.masksToBounds = YES;
     
-    
+    // LG 的 bb
     // 存在多个图层，开启圆角，离屏渲染
     
     
