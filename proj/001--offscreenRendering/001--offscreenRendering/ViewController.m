@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    //
+    
+    
+    //
+    
+    
+    //
     
     //1.按钮存在背景图片
 //    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -26,6 +32,17 @@
 //
 //    btn1.layer.cornerRadius = 50;
 //    btn1.clipsToBounds = YES;
+    
+    
+    //
+    
+    
+    //
+    
+    
+    //
+    
+    
     
     //1.2 按钮存在背景图片(not offscreen rendering)
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -41,6 +58,14 @@
     // 所以没有离屏渲染
     
     
+    //
+    
+    
+    //
+    
+    
+    //
+    
     
     
     
@@ -53,16 +78,41 @@
     btn2.layer.cornerRadius = 50;
     btn2.clipsToBounds = YES;
     
+    
+    
+    
+    //
+    
+    
+    //
+    
+    
+    //
+    
+    
+    
+    
     //3.UIImageView 设置了图片+背景色;
     UIImageView *img1 = [[UIImageView alloc]init];
     img1.frame = CGRectMake(100, 320, 100, 100);
-    img1.backgroundColor = [UIColor blueColor];
-    img1.image = [UIImage imageNamed:@"btn.png"];
+    img1.backgroundColor = [UIColor blueColor];  // 图层 1
+    img1.image = [UIImage imageNamed:@"btn.png"];   // layer 2
     [self.view addSubview:img1];
     
     img1.layer.cornerRadius = 50;
     img1.layer.masksToBounds = YES;
     
+    
+    // 存在多个图层，开启圆角，离屏渲染
+    
+    
+    //
+    
+    
+    //
+    
+    
+    //
     
     //4.UIImageView 只设置了图片,无背景色;
     UIImageView *img2 = [[UIImageView alloc]init];
